@@ -30,7 +30,7 @@ class ManagePlayersTabViewController: ModalViewController, ModalViewControllerDe
     }
     
     @IBAction func showRegisterModal(_ sender: Any) {
-        let storyboard: UIStoryboard = self.storyboard!
+        let storyboard: UIStoryboard = UIStoryboard(name: "RegistPlayers", bundle: nil)
         registerNewPlayersViewController = storyboard.instantiateViewController(withIdentifier: "RegisterNewPlayerViewController") as! RegistNewPlayerViewController
         registerNewPlayersViewController.delegate = self
         self.present(registerNewPlayersViewController, animated: true, completion: nil)

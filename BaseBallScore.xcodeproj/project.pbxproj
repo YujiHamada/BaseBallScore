@@ -75,9 +75,9 @@
 		CAD65695209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */; };
 		CAD65696209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */; };
 		CAD65697209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */; };
-		CAD65699209C252100262C2A /* ManagePlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD65698209C252100262C2A /* ManagePlayers.storyboard */; };
-		CAD6569A209C252100262C2A /* ManagePlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD65698209C252100262C2A /* ManagePlayers.storyboard */; };
-		CAD6569B209C252100262C2A /* ManagePlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD65698209C252100262C2A /* ManagePlayers.storyboard */; };
+		CAD6569D209C268C00262C2A /* ManagePlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD6569C209C268C00262C2A /* ManagePlayers.storyboard */; };
+		CAD6569E209C268C00262C2A /* ManagePlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD6569C209C268C00262C2A /* ManagePlayers.storyboard */; };
+		CAD6569F209C268C00262C2A /* ManagePlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD6569C209C268C00262C2A /* ManagePlayers.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,7 +139,7 @@
 		CAD6568A209C0B1300262C2A /* GamesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamesTable.storyboard; sourceTree = "<group>"; };
 		CAD65690209C0D7900262C2A /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
 		CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
-		CAD65698209C252100262C2A /* ManagePlayers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagePlayers.storyboard; sourceTree = "<group>"; };
+		CAD6569C209C268C00262C2A /* ManagePlayers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ManagePlayers.storyboard; sourceTree = "<group>"; };
 		E454DDBF094B4B471AFD0E51 /* Pods-BaseBallScoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseBallScoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseBallScoreUITests/Pods-BaseBallScoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,9 +215,9 @@
 		CA3820042094A7E100B34FE0 /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				CAD6569C209C268C00262C2A /* ManagePlayers.storyboard */,
 				CA3865C72078C477004F18BF /* RegistPlayers.storyboard */,
 				CAC7A3AD207F9E190070A8E2 /* PlayersTable.storyboard */,
-				CAD65698209C252100262C2A /* ManagePlayers.storyboard */,
 			);
 			path = Players;
 			sourceTree = "<group>";
@@ -464,7 +464,7 @@
 				CAC7A3AE207F9E190070A8E2 /* PlayersTable.storyboard in Resources */,
 				CA381FFB20949DC600B34FE0 /* ManageTeam.storyboard in Resources */,
 				CA3865982078C07E004F18BF /* Main.storyboard in Resources */,
-				CAD65699209C252100262C2A /* ManagePlayers.storyboard in Resources */,
+				CAD6569D209C268C00262C2A /* ManagePlayers.storyboard in Resources */,
 				CA3865C42078C2AD004F18BF /* Main.storyboard in Resources */,
 				CA3865C82078C477004F18BF /* RegistPlayers.storyboard in Resources */,
 			);
@@ -477,7 +477,7 @@
 				CA381FFC20949DC600B34FE0 /* ManageTeam.storyboard in Resources */,
 				CA381FF4209498E600B34FE0 /* ManageGame.storyboard in Resources */,
 				CA3865C92078C477004F18BF /* RegistPlayers.storyboard in Resources */,
-				CAD6569A209C252100262C2A /* ManagePlayers.storyboard in Resources */,
+				CAD6569E209C268C00262C2A /* ManagePlayers.storyboard in Resources */,
 				CA3865C52078C2AD004F18BF /* Main.storyboard in Resources */,
 				CAC7A3AF207F9E190070A8E2 /* PlayersTable.storyboard in Resources */,
 				CA3820192095930800B34FE0 /* StartGame.storyboard in Resources */,
@@ -491,7 +491,7 @@
 				CA381FFD20949DC600B34FE0 /* ManageTeam.storyboard in Resources */,
 				CA381FF5209498E600B34FE0 /* ManageGame.storyboard in Resources */,
 				CA3865CA2078C477004F18BF /* RegistPlayers.storyboard in Resources */,
-				CAD6569B209C252100262C2A /* ManagePlayers.storyboard in Resources */,
+				CAD6569F209C268C00262C2A /* ManagePlayers.storyboard in Resources */,
 				CA3865C62078C2AD004F18BF /* Main.storyboard in Resources */,
 				CAC7A3B0207F9E190070A8E2 /* PlayersTable.storyboard in Resources */,
 				CA38201A2095930800B34FE0 /* StartGame.storyboard in Resources */,
