@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4A9FE76180300C6C39A1DF0 /* Pods_BaseBallScoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529783987F0FA3A3ADA545F4 /* Pods_BaseBallScoreTests.framework */; };
+		AA91EB29043B839DAA34ADAF /* Pods_BaseBallScoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8C35F695FF52E4AD694495 /* Pods_BaseBallScoreUITests.framework */; };
+		AB5D6B4602B6D5AF7C3DF779 /* Pods_BaseBallScore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DA73613F6A84D683DE631A /* Pods_BaseBallScore.framework */; };
+		CA381FF3209498E600B34FE0 /* ManageGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA381FF2209498E600B34FE0 /* ManageGame.storyboard */; };
+		CA381FF4209498E600B34FE0 /* ManageGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA381FF2209498E600B34FE0 /* ManageGame.storyboard */; };
+		CA381FF5209498E600B34FE0 /* ManageGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA381FF2209498E600B34FE0 /* ManageGame.storyboard */; };
+		CA381FF720949C2F00B34FE0 /* ManageTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA381FF620949C2E00B34FE0 /* ManageTeamViewController.swift */; };
+		CA381FF820949C2F00B34FE0 /* ManageTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA381FF620949C2E00B34FE0 /* ManageTeamViewController.swift */; };
+		CA381FF920949C2F00B34FE0 /* ManageTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA381FF620949C2E00B34FE0 /* ManageTeamViewController.swift */; };
+		CA381FFB20949DC600B34FE0 /* ManageTeam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA381FFA20949DC600B34FE0 /* ManageTeam.storyboard */; };
+		CA381FFC20949DC600B34FE0 /* ManageTeam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA381FFA20949DC600B34FE0 /* ManageTeam.storyboard */; };
+		CA381FFD20949DC600B34FE0 /* ManageTeam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA381FFA20949DC600B34FE0 /* ManageTeam.storyboard */; };
+		CA381FFF20949EB500B34FE0 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA381FFE20949EB500B34FE0 /* ModalViewController.swift */; };
+		CA38200020949EB500B34FE0 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA381FFE20949EB500B34FE0 /* ModalViewController.swift */; };
+		CA38200120949EB500B34FE0 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA381FFE20949EB500B34FE0 /* ModalViewController.swift */; };
+		CA3820132094AB3F00B34FE0 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3820122094AB3F00B34FE0 /* Team.swift */; };
+		CA3820142094AB3F00B34FE0 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3820122094AB3F00B34FE0 /* Team.swift */; };
+		CA3820152094AB3F00B34FE0 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3820122094AB3F00B34FE0 /* Team.swift */; };
+		CA3820182095930800B34FE0 /* StartGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3820172095930800B34FE0 /* StartGame.storyboard */; };
+		CA3820192095930800B34FE0 /* StartGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3820172095930800B34FE0 /* StartGame.storyboard */; };
+		CA38201A2095930800B34FE0 /* StartGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3820172095930800B34FE0 /* StartGame.storyboard */; };
+		CA38201D2095934800B34FE0 /* ManageGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38201C2095934800B34FE0 /* ManageGameViewController.swift */; };
+		CA38201E2095934800B34FE0 /* ManageGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38201C2095934800B34FE0 /* ManageGameViewController.swift */; };
+		CA38201F2095934800B34FE0 /* ManageGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38201C2095934800B34FE0 /* ManageGameViewController.swift */; };
+		CA3820212095935C00B34FE0 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3820202095935C00B34FE0 /* StartGameViewController.swift */; };
+		CA3820222095935C00B34FE0 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3820202095935C00B34FE0 /* StartGameViewController.swift */; };
+		CA3820232095935C00B34FE0 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3820202095935C00B34FE0 /* StartGameViewController.swift */; };
+		CA3820252095B74100B34FE0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3820242095B74100B34FE0 /* Game.swift */; };
+		CA3820262095B74100B34FE0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3820242095B74100B34FE0 /* Game.swift */; };
+		CA3820272095B74100B34FE0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3820242095B74100B34FE0 /* Game.swift */; };
 		CA3865932078C07E004F18BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865922078C07E004F18BF /* AppDelegate.swift */; };
 		CA3865952078C07E004F18BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865942078C07E004F18BF /* ViewController.swift */; };
 		CA3865982078C07E004F18BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3865962078C07E004F18BF /* Main.storyboard */; };
@@ -14,6 +44,40 @@
 		CA38659D2078C080004F18BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA38659B2078C080004F18BF /* LaunchScreen.storyboard */; };
 		CA3865A82078C081004F18BF /* BaseBallScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865A72078C081004F18BF /* BaseBallScoreTests.swift */; };
 		CA3865B32078C081004F18BF /* BaseBallScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865B22078C081004F18BF /* BaseBallScoreUITests.swift */; };
+		CA3865C42078C2AD004F18BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3865C32078C2AD004F18BF /* Main.storyboard */; };
+		CA3865C52078C2AD004F18BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3865C32078C2AD004F18BF /* Main.storyboard */; };
+		CA3865C62078C2AD004F18BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3865C32078C2AD004F18BF /* Main.storyboard */; };
+		CA3865C82078C477004F18BF /* RegistPlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3865C72078C477004F18BF /* RegistPlayers.storyboard */; };
+		CA3865C92078C477004F18BF /* RegistPlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3865C72078C477004F18BF /* RegistPlayers.storyboard */; };
+		CA3865CA2078C477004F18BF /* RegistPlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3865C72078C477004F18BF /* RegistPlayers.storyboard */; };
+		CA3865CD2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */; };
+		CA3865CE2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */; };
+		CA3865CF2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */; };
+		CAC7A3A6207D06250070A8E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A5207D06250070A8E2 /* Player.swift */; };
+		CAC7A3A7207D06250070A8E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A5207D06250070A8E2 /* Player.swift */; };
+		CAC7A3A8207D06250070A8E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A5207D06250070A8E2 /* Player.swift */; };
+		CAC7A3AA207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A9207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift */; };
+		CAC7A3AB207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A9207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift */; };
+		CAC7A3AC207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A9207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift */; };
+		CAC7A3AE207F9E190070A8E2 /* PlayersTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC7A3AD207F9E190070A8E2 /* PlayersTable.storyboard */; };
+		CAC7A3AF207F9E190070A8E2 /* PlayersTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC7A3AD207F9E190070A8E2 /* PlayersTable.storyboard */; };
+		CAC7A3B0207F9E190070A8E2 /* PlayersTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC7A3AD207F9E190070A8E2 /* PlayersTable.storyboard */; };
+		CAC7A3B6207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3B5207F9E6A0070A8E2 /* PlayersTableViewController.swift */; };
+		CAC7A3B7207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3B5207F9E6A0070A8E2 /* PlayersTableViewController.swift */; };
+		CAC7A3B8207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3B5207F9E6A0070A8E2 /* PlayersTableViewController.swift */; };
+		CAC7A3BB207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3BA207FA8440070A8E2 /* PlayersTableViewCell.swift */; };
+		CAC7A3BC207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3BA207FA8440070A8E2 /* PlayersTableViewCell.swift */; };
+		CAC7A3BD207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3BA207FA8440070A8E2 /* PlayersTableViewCell.swift */; };
+		CAD6568B209C0B1300262C2A /* GamesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD6568A209C0B1300262C2A /* GamesTable.storyboard */; };
+		CAD65691209C0D7900262C2A /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD65690209C0D7900262C2A /* GamesTableViewController.swift */; };
+		CAD65692209C0D7900262C2A /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD65690209C0D7900262C2A /* GamesTableViewController.swift */; };
+		CAD65693209C0D7900262C2A /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD65690209C0D7900262C2A /* GamesTableViewController.swift */; };
+		CAD65695209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */; };
+		CAD65696209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */; };
+		CAD65697209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */; };
+		CAD65699209C252100262C2A /* ManagePlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD65698209C252100262C2A /* ManagePlayers.storyboard */; };
+		CAD6569A209C252100262C2A /* ManagePlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD65698209C252100262C2A /* ManagePlayers.storyboard */; };
+		CAD6569B209C252100262C2A /* ManagePlayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD65698209C252100262C2A /* ManagePlayers.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +98,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252CF4430624EFFC6FB04598 /* Pods-BaseBallScoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseBallScoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseBallScoreUITests/Pods-BaseBallScoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F8C35F695FF52E4AD694495 /* Pods_BaseBallScoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseBallScoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		529783987F0FA3A3ADA545F4 /* Pods_BaseBallScoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseBallScoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C0578275C6A297FD510FB9 /* Pods-BaseBallScoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseBallScoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseBallScoreTests/Pods-BaseBallScoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CC5513B7989B85934251E02 /* Pods-BaseBallScoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseBallScoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseBallScoreTests/Pods-BaseBallScoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88DA73613F6A84D683DE631A /* Pods_BaseBallScore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseBallScore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E063277128949BCCFC5E33 /* Pods-BaseBallScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseBallScore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseBallScore/Pods-BaseBallScore.debug.xcconfig"; sourceTree = "<group>"; };
+		AFA4DB94E93BF8190C25CF1C /* Pods-BaseBallScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseBallScore.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseBallScore/Pods-BaseBallScore.release.xcconfig"; sourceTree = "<group>"; };
+		CA381FF2209498E600B34FE0 /* ManageGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageGame.storyboard; sourceTree = "<group>"; };
+		CA381FF620949C2E00B34FE0 /* ManageTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTeamViewController.swift; sourceTree = "<group>"; };
+		CA381FFA20949DC600B34FE0 /* ManageTeam.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageTeam.storyboard; sourceTree = "<group>"; };
+		CA381FFE20949EB500B34FE0 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		CA3820122094AB3F00B34FE0 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		CA3820172095930800B34FE0 /* StartGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartGame.storyboard; sourceTree = "<group>"; };
+		CA38201C2095934800B34FE0 /* ManageGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGameViewController.swift; sourceTree = "<group>"; };
+		CA3820202095935C00B34FE0 /* StartGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
+		CA3820242095B74100B34FE0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		CA38658F2078C07E004F18BF /* BaseBallScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseBallScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3865922078C07E004F18BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA3865942078C07E004F18BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +128,19 @@
 		CA3865AE2078C081004F18BF /* BaseBallScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseBallScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3865B22078C081004F18BF /* BaseBallScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBallScoreUITests.swift; sourceTree = "<group>"; };
 		CA3865B42078C081004F18BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3865C32078C2AD004F18BF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CA3865C72078C477004F18BF /* RegistPlayers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistPlayers.storyboard; sourceTree = "<group>"; };
+		CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistNewPlayerViewController.swift; sourceTree = "<group>"; };
+		CAC7A3A5207D06250070A8E2 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CAC7A3A9207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePlayersTabViewController.swift; sourceTree = "<group>"; };
+		CAC7A3AD207F9E190070A8E2 /* PlayersTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayersTable.storyboard; sourceTree = "<group>"; };
+		CAC7A3B5207F9E6A0070A8E2 /* PlayersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewController.swift; sourceTree = "<group>"; };
+		CAC7A3BA207FA8440070A8E2 /* PlayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewCell.swift; sourceTree = "<group>"; };
+		CAD6568A209C0B1300262C2A /* GamesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamesTable.storyboard; sourceTree = "<group>"; };
+		CAD65690209C0D7900262C2A /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
+		CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
+		CAD65698209C252100262C2A /* ManagePlayers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagePlayers.storyboard; sourceTree = "<group>"; };
+		E454DDBF094B4B471AFD0E51 /* Pods-BaseBallScoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseBallScoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseBallScoreUITests/Pods-BaseBallScoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5D6B4602B6D5AF7C3DF779 /* Pods_BaseBallScore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A9FE76180300C6C39A1DF0 /* Pods_BaseBallScoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +164,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA91EB29043B839DAA34ADAF /* Pods_BaseBallScoreUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		738D0411CA90081409AD3E94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0E063277128949BCCFC5E33 /* Pods-BaseBallScore.debug.xcconfig */,
+				AFA4DB94E93BF8190C25CF1C /* Pods-BaseBallScore.release.xcconfig */,
+				7CC5513B7989B85934251E02 /* Pods-BaseBallScoreTests.debug.xcconfig */,
+				68C0578275C6A297FD510FB9 /* Pods-BaseBallScoreTests.release.xcconfig */,
+				252CF4430624EFFC6FB04598 /* Pods-BaseBallScoreUITests.debug.xcconfig */,
+				E454DDBF094B4B471AFD0E51 /* Pods-BaseBallScoreUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B9318888BDFDE843450049C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88DA73613F6A84D683DE631A /* Pods_BaseBallScore.framework */,
+				529783987F0FA3A3ADA545F4 /* Pods_BaseBallScoreTests.framework */,
+				3F8C35F695FF52E4AD694495 /* Pods_BaseBallScoreUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA3820022094A53C00B34FE0 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */,
+				CAC7A3A9207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift */,
+				CAC7A3B5207F9E6A0070A8E2 /* PlayersTableViewController.swift */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		CA3820032094A55200B34FE0 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				CA381FF620949C2E00B34FE0 /* ManageTeamViewController.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		CA3820042094A7E100B34FE0 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				CA3865C72078C477004F18BF /* RegistPlayers.storyboard */,
+				CAC7A3AD207F9E190070A8E2 /* PlayersTable.storyboard */,
+				CAD65698209C252100262C2A /* ManagePlayers.storyboard */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		CA3820052094A7E400B34FE0 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				CA381FFA20949DC600B34FE0 /* ManageTeam.storyboard */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		CA382016209592CB00B34FE0 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				CA381FF2209498E600B34FE0 /* ManageGame.storyboard */,
+				CA3820172095930800B34FE0 /* StartGame.storyboard */,
+				CAD6568A209C0B1300262C2A /* GamesTable.storyboard */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		CA38201B2095931F00B34FE0 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				CA38201C2095934800B34FE0 /* ManageGameViewController.swift */,
+				CA3820202095935C00B34FE0 /* StartGameViewController.swift */,
+				CAD65690209C0D7900262C2A /* GamesTableViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		CA3865862078C07E004F18BF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +257,8 @@
 				CA3865A62078C081004F18BF /* BaseBallScoreTests */,
 				CA3865B12078C081004F18BF /* BaseBallScoreUITests */,
 				CA3865902078C07E004F18BF /* Products */,
+				738D0411CA90081409AD3E94 /* Pods */,
+				9B9318888BDFDE843450049C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +275,10 @@
 		CA3865912078C07E004F18BF /* BaseBallScore */ = {
 			isa = PBXGroup;
 			children = (
+				CAC7A3B9207FA81E0070A8E2 /* Cell */,
+				CAC7A3A4207D00C80070A8E2 /* Model */,
+				CA3865CB2078CB4F004F18BF /* Viewcontroller */,
+				CA3865C02078C264004F18BF /* Storyboard */,
 				CA3865922078C07E004F18BF /* AppDelegate.swift */,
 				CA3865942078C07E004F18BF /* ViewController.swift */,
 				CA3865962078C07E004F18BF /* Main.storyboard */,
@@ -125,6 +307,47 @@
 			path = BaseBallScoreUITests;
 			sourceTree = "<group>";
 		};
+		CA3865C02078C264004F18BF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CA382016209592CB00B34FE0 /* Game */,
+				CA3820052094A7E400B34FE0 /* Team */,
+				CA3820042094A7E100B34FE0 /* Players */,
+				CA3865C32078C2AD004F18BF /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CA3865CB2078CB4F004F18BF /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				CA38201B2095931F00B34FE0 /* Game */,
+				CA3820032094A55200B34FE0 /* Team */,
+				CA3820022094A53C00B34FE0 /* Players */,
+				CA381FFE20949EB500B34FE0 /* ModalViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		CAC7A3A4207D00C80070A8E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAC7A3A5207D06250070A8E2 /* Player.swift */,
+				CA3820122094AB3F00B34FE0 /* Team.swift */,
+				CA3820242095B74100B34FE0 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAC7A3B9207FA81E0070A8E2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CAC7A3BA207FA8440070A8E2 /* PlayersTableViewCell.swift */,
+				CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +355,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA3865B72078C081004F18BF /* Build configuration list for PBXNativeTarget "BaseBallScore" */;
 			buildPhases = (
+				D5A6DBB939168252EF5356DC /* [CP] Check Pods Manifest.lock */,
 				CA38658B2078C07E004F18BF /* Sources */,
 				CA38658C2078C07E004F18BF /* Frameworks */,
 				CA38658D2078C07E004F18BF /* Resources */,
+				8969B0145DA8B045AECF2463 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +374,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA3865BA2078C081004F18BF /* Build configuration list for PBXNativeTarget "BaseBallScoreTests" */;
 			buildPhases = (
+				A3717790EED81F040F9FADD1 /* [CP] Check Pods Manifest.lock */,
 				CA38659F2078C081004F18BF /* Sources */,
 				CA3865A02078C081004F18BF /* Frameworks */,
 				CA3865A12078C081004F18BF /* Resources */,
@@ -167,6 +393,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA3865BD2078C081004F18BF /* Build configuration list for PBXNativeTarget "BaseBallScoreUITests" */;
 			buildPhases = (
+				75380F2C61F6D227C2452CBD /* [CP] Check Pods Manifest.lock */,
 				CA3865AA2078C081004F18BF /* Sources */,
 				CA3865AB2078C081004F18BF /* Frameworks */,
 				CA3865AC2078C081004F18BF /* Resources */,
@@ -230,8 +457,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA38659D2078C080004F18BF /* LaunchScreen.storyboard in Resources */,
+				CAD6568B209C0B1300262C2A /* GamesTable.storyboard in Resources */,
 				CA38659A2078C080004F18BF /* Assets.xcassets in Resources */,
+				CA3820182095930800B34FE0 /* StartGame.storyboard in Resources */,
+				CA381FF3209498E600B34FE0 /* ManageGame.storyboard in Resources */,
+				CAC7A3AE207F9E190070A8E2 /* PlayersTable.storyboard in Resources */,
+				CA381FFB20949DC600B34FE0 /* ManageTeam.storyboard in Resources */,
 				CA3865982078C07E004F18BF /* Main.storyboard in Resources */,
+				CAD65699209C252100262C2A /* ManagePlayers.storyboard in Resources */,
+				CA3865C42078C2AD004F18BF /* Main.storyboard in Resources */,
+				CA3865C82078C477004F18BF /* RegistPlayers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +474,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA381FFC20949DC600B34FE0 /* ManageTeam.storyboard in Resources */,
+				CA381FF4209498E600B34FE0 /* ManageGame.storyboard in Resources */,
+				CA3865C92078C477004F18BF /* RegistPlayers.storyboard in Resources */,
+				CAD6569A209C252100262C2A /* ManagePlayers.storyboard in Resources */,
+				CA3865C52078C2AD004F18BF /* Main.storyboard in Resources */,
+				CAC7A3AF207F9E190070A8E2 /* PlayersTable.storyboard in Resources */,
+				CA3820192095930800B34FE0 /* StartGame.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,18 +488,115 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA381FFD20949DC600B34FE0 /* ManageTeam.storyboard in Resources */,
+				CA381FF5209498E600B34FE0 /* ManageGame.storyboard in Resources */,
+				CA3865CA2078C477004F18BF /* RegistPlayers.storyboard in Resources */,
+				CAD6569B209C252100262C2A /* ManagePlayers.storyboard in Resources */,
+				CA3865C62078C2AD004F18BF /* Main.storyboard in Resources */,
+				CAC7A3B0207F9E190070A8E2 /* PlayersTable.storyboard in Resources */,
+				CA38201A2095930800B34FE0 /* StartGame.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75380F2C61F6D227C2452CBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseBallScoreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8969B0145DA8B045AECF2463 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaseBallScore/Pods-BaseBallScore-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseBallScore/Pods-BaseBallScore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3717790EED81F040F9FADD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseBallScoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5A6DBB939168252EF5356DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseBallScore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA38658B2078C07E004F18BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA381FF720949C2F00B34FE0 /* ManageTeamViewController.swift in Sources */,
+				CAC7A3AA207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift in Sources */,
+				CAC7A3A6207D06250070A8E2 /* Player.swift in Sources */,
+				CA3820252095B74100B34FE0 /* Game.swift in Sources */,
+				CAC7A3B6207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */,
+				CAD65691209C0D7900262C2A /* GamesTableViewController.swift in Sources */,
+				CAC7A3BB207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */,
+				CA3865CD2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */,
 				CA3865952078C07E004F18BF /* ViewController.swift in Sources */,
+				CA381FFF20949EB500B34FE0 /* ModalViewController.swift in Sources */,
+				CA3820132094AB3F00B34FE0 /* Team.swift in Sources */,
+				CA38201D2095934800B34FE0 /* ManageGameViewController.swift in Sources */,
 				CA3865932078C07E004F18BF /* AppDelegate.swift in Sources */,
+				CAD65695209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */,
+				CA3820212095935C00B34FE0 /* StartGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +604,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA38201E2095934800B34FE0 /* ManageGameViewController.swift in Sources */,
+				CA3820142094AB3F00B34FE0 /* Team.swift in Sources */,
+				CA38200020949EB500B34FE0 /* ModalViewController.swift in Sources */,
+				CAD65696209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */,
 				CA3865A82078C081004F18BF /* BaseBallScoreTests.swift in Sources */,
+				CA381FF820949C2F00B34FE0 /* ManageTeamViewController.swift in Sources */,
+				CAC7A3A7207D06250070A8E2 /* Player.swift in Sources */,
+				CA3820222095935C00B34FE0 /* StartGameViewController.swift in Sources */,
+				CA3820262095B74100B34FE0 /* Game.swift in Sources */,
+				CAC7A3BC207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */,
+				CAC7A3AB207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift in Sources */,
+				CAD65692209C0D7900262C2A /* GamesTableViewController.swift in Sources */,
+				CA3865CE2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */,
+				CAC7A3B7207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +625,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA38201F2095934800B34FE0 /* ManageGameViewController.swift in Sources */,
+				CA3820152094AB3F00B34FE0 /* Team.swift in Sources */,
+				CA38200120949EB500B34FE0 /* ModalViewController.swift in Sources */,
+				CAD65697209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */,
 				CA3865B32078C081004F18BF /* BaseBallScoreUITests.swift in Sources */,
+				CA381FF920949C2F00B34FE0 /* ManageTeamViewController.swift in Sources */,
+				CAC7A3A8207D06250070A8E2 /* Player.swift in Sources */,
+				CA3820232095935C00B34FE0 /* StartGameViewController.swift in Sources */,
+				CA3820272095B74100B34FE0 /* Game.swift in Sources */,
+				CAC7A3BD207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */,
+				CAC7A3AC207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift in Sources */,
+				CAD65693209C0D7900262C2A /* GamesTableViewController.swift in Sources */,
+				CA3865CF2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */,
+				CAC7A3B8207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,9 +793,11 @@
 		};
 		CA3865B82078C081004F18BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E063277128949BCCFC5E33 /* Pods-BaseBallScore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XVBVU8RGG5;
 				INFOPLIST_FILE = BaseBallScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,9 +812,11 @@
 		};
 		CA3865B92078C081004F18BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA4DB94E93BF8190C25CF1C /* Pods-BaseBallScore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XVBVU8RGG5;
 				INFOPLIST_FILE = BaseBallScore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +831,7 @@
 		};
 		CA3865BB2078C081004F18BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CC5513B7989B85934251E02 /* Pods-BaseBallScoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +852,7 @@
 		};
 		CA3865BC2078C081004F18BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C0578275C6A297FD510FB9 /* Pods-BaseBallScoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +873,7 @@
 		};
 		CA3865BE2078C081004F18BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252CF4430624EFFC6FB04598 /* Pods-BaseBallScoreUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +893,7 @@
 		};
 		CA3865BF2078C081004F18BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E454DDBF094B4B471AFD0E51 /* Pods-BaseBallScoreUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
