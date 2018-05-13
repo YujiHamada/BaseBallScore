@@ -1,23 +1,17 @@
 //
-//  GamesTableViewController.swift
+//  ScoreBoardTableViewController.swift
 //  BaseBallScore
 //
-//  Created by 濱田裕史 on 2018/05/04.
+//  Created by 濱田裕史 on 2018/05/06.
 //  Copyright © 2018年 濱田裕史. All rights reserved.
 //
 
 import UIKit
-import RealmSwift
 
-class GamesTableViewController: UITableViewController {
+class ScoreBoardTableViewController: UITableViewController {
 
-    var games:Results<Game>?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let realm = try! Realm()
-        games = realm.objects(Game.self)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -35,41 +29,23 @@ class GamesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (games?.count)!
+        return 0
     }
 
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GamesTableViewCell", for: indexPath) as! GamesTableViewCell
-        
-        let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "yyyy-MM-dd"
-//        cell.date.text = dateformatter.date(from: games![indexPath.row].date)
-        cell.date.text = dateformatter.string(from: games![indexPath.row].date!)
-        
-        cell.opponent.text = games![indexPath.row].opponent
-        
-        cell.date.sizeToFit()
-        cell.opponent.sizeToFit()
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let game = games![indexPath.row]
-        let storyboard = UIStoryboard(name: "Scoreboard", bundle: nil)
-        let viewController:ScoreboardViewController = storyboard.instantiateViewController(withIdentifier: "ScoreboardViewController") as! ScoreboardViewController
-        
-        viewController.game = game
-        
-        self.navigationController?.pushViewController(viewController, animated: true)
-        
-    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

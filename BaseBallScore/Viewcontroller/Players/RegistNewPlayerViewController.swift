@@ -9,7 +9,9 @@
 import UIKit
 import RealmSwift
 
-class RegistNewPlayerViewController: ModalViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class RegistNewPlayerViewController: UIViewController, ModalViewControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    var delegate: ModalViewControllerDelegate! = nil
     
     @IBOutlet weak var nameLabel: UITextField!
     @IBOutlet weak var mainPosition: UITextField!

@@ -53,11 +53,13 @@
             </objects>
             <point key="canvasLocation" x="2612" y="62.518740629685162"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--選手管理-->
         <scene sceneID="j9f-HL-qjO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zp6-ps-pr6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="選手管理" id="zkC-Xi-gB9"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pH0-WX-LTq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

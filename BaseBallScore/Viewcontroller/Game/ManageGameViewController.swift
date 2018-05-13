@@ -7,14 +7,20 @@
 //
 
 import UIKit
+//import RealmSwift
 
 class ManageGameViewController: UIViewController, ModalViewControllerDelegate {
     
-
     var startGameViewController:StartGameViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let realm = try! Realm()
+//        try! realm.write {
+//            let game = realm.objects(Game.self)
+//            realm.delete(game)
+//        }
 
         // Do any additional setup after loading the view.
     }
@@ -29,7 +35,8 @@ class ManageGameViewController: UIViewController, ModalViewControllerDelegate {
         let storyboard = UIStoryboard(name: "StartGame", bundle: nil)
         startGameViewController = storyboard.instantiateViewController(withIdentifier: "StartGameViewController") as? StartGameViewController
         startGameViewController?.delegate = self
-        self.present(startGameViewController!, animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: startGameViewController!)
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     func finishModal() {

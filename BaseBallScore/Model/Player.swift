@@ -25,4 +25,9 @@ class Player: Object {
     override static func primaryKey() -> String? {
         return "id"
     }
+    
+    static func getAll()->Results<Player>{
+        let realm = try! Realm()
+        return realm.objects(Player.self)
+    }
 }

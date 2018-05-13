@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ManagePlayersTabViewController: ModalViewController, ModalViewControllerDelegate {
+class ManagePlayersTabViewController: UIViewController, ModalViewControllerDelegate {
     
     var registerNewPlayersViewController: RegistNewPlayerViewController! = nil
     var manageTeamViewController: ManageTeamViewController! = nil
@@ -47,10 +47,8 @@ class ManagePlayersTabViewController: ModalViewController, ModalViewControllerDe
     }
     
     @IBAction func showManageTeam(_ sender: Any) {
-//        let storyboard: UIStoryboard = self.storyboard!
         let storyboard = UIStoryboard(name: "ManageTeam", bundle: nil)
         manageTeamViewController = storyboard.instantiateViewController(withIdentifier: "ManageTeamViewController") as! ManageTeamViewController
-//        manageNewPlayersViewController.delegate = self
         self.navigationController?.pushViewController(manageTeamViewController, animated: true)
     }
     

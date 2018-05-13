@@ -7,12 +7,13 @@
 //
 
 import Foundation
-
 import RealmSwift
+
 class Game: Object {
     @objc dynamic var id:String =  NSUUID().uuidString
     @objc dynamic var opponent:String?
     @objc dynamic var date:Date?
+    var is_bat_first:Bool?
     @objc dynamic var created: Double = NSDate().timeIntervalSince1970
     @objc dynamic var updated: Double = NSDate().timeIntervalSince1970
     

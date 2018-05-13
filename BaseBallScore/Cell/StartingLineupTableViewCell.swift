@@ -1,16 +1,17 @@
 //
-//  GamesTableViewCell.swift
+//  StartingLineupTableViewCell.swift
 //  BaseBallScore
 //
-//  Created by 濱田裕史 on 2018/05/04.
+//  Created by 濱田裕史 on 2018/05/05.
 //  Copyright © 2018年 濱田裕史. All rights reserved.
 //
 
 import UIKit
 
-class GamesTableViewCell: UITableViewCell {
-    @IBOutlet weak var date: UILabel!
-    @IBOutlet weak var opponent: UILabel!
+class StartingLineupTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var positionTextField: UITextField!
+    @IBOutlet weak var playerTextField: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +24,4 @@ class GamesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    @IBAction func registGameDetail(_ sender: Any) {
-        
-    }
 }

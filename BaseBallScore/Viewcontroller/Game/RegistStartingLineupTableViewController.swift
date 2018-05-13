@@ -1,31 +1,66 @@
 //
-//  GamesTableViewController.swift
+//  RegistStartingLineupTableViewController.swift
 //  BaseBallScore
 //
-//  Created by 濱田裕史 on 2018/05/04.
+//  Created by 濱田裕史 on 2018/05/05.
 //  Copyright © 2018年 濱田裕史. All rights reserved.
 //
 
 import UIKit
 import RealmSwift
 
-class GamesTableViewController: UITableViewController {
-
-    var games:Results<Game>?
+class RegistStartingLineupTableViewController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    var players:Results<Player> = Player.getAll()
+    let positions = Postion.cases
+    let toolBar:UIToolbar = UIToolbar()
+    let positionPickerView = UIPickerView()
+    let playerPickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let realm = try! Realm()
-        games = realm.objects(Game.self)
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor.blue
+        toolBar.sizeToFit()
 
+        positionPickerView.tag = 0
+        positionPickerView.delegate = self
+        
+        playerPickerView.tag = 1
+        playerPickerView.delegate = self
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1;
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 1;
+    }
+    
+     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView.tag == 0{
+            return positions[row].name()
+        } else {
+            return players[row].name
+        }
+    }
+    
+    @IBAction func insertRows(_ sender: Any) {
+        
+    }
+    
+    @IBAction func regist(_ sender: Any) {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,35 +75,24 @@ class GamesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (games?.count)!
+        return (players.count)
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GamesTableViewCell", for: indexPath) as! GamesTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StartingLineupTableViewCell", for: indexPath) as! StartingLineupTableViewCell
         
-        let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "yyyy-MM-dd"
-//        cell.date.text = dateformatter.date(from: games![indexPath.row].date)
-        cell.date.text = dateformatter.string(from: games![indexPath.row].date!)
+        cell.playerTextField.inputAccessoryView = toolBar
+        cell.playerTextField.inputView = playerPickerView
+        cell.positionTextField.inputAccessoryView = toolBar
+        cell.positionTextField.inputView = positionPickerView
         
-        cell.opponent.text = games![indexPath.row].opponent
         
-        cell.date.sizeToFit()
-        cell.opponent.sizeToFit()
-        
+
+        // Configure the cell...
+
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let game = games![indexPath.row]
-        let storyboard = UIStoryboard(name: "Scoreboard", bundle: nil)
-        let viewController:ScoreboardViewController = storyboard.instantiateViewController(withIdentifier: "ScoreboardViewController") as! ScoreboardViewController
-        
-        viewController.game = game
-        
-        self.navigationController?.pushViewController(viewController, animated: true)
-        
     }
 
     /*

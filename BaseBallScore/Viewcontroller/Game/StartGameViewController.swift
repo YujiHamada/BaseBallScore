@@ -1,4 +1,4 @@
-//
+    //
 //  StartGameViewController.swift
 //  BaseBallScore
 //
@@ -8,10 +8,12 @@
 
 import UIKit
 
-class StartGameViewController: ModalViewController {
+class StartGameViewController: UIViewController {
    
+    var delegate: ModalViewControllerDelegate! = nil
     @IBOutlet weak var opponent: UITextField!
     @IBOutlet weak var date: UITextField!
+    @IBOutlet weak var is_bat_first: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,12 +64,17 @@ class StartGameViewController: ModalViewController {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         game.date = dateFormatter.date(from: (date?.text)!)
         game.opponent = opponent.text
+        game.is_bat_first = is_bat_first.isOn
         game.save()
         
-        let alert: UIAlertController = UIAlertController(title: "試合登録が完了しました", message: nil, preferredStyle: UIAlertControllerStyle.alert)
-        let okAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
-        alert.addAction(okAction)
-        present(alert, animated: true, completion: nil)
+//        let alert: UIAlertController = UIAlertController(title: "試合登録が完了しました", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+//        let okAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+//        alert.addAction(okAction)
+//        present(alert, animated: true, completion: nil)
+        
+        let storyboard:UIStoryboard = UIStoryboard(name: "RegistStartingLineup", bundle: nil)
+        let viewcontroller = storyboard.instantiateViewController(withIdentifier: "RegistStartingLineupTableViewController") as! RegistStartingLineupTableViewController
+        self.navigationController?.pushViewController(viewcontroller, animated: true)
     }
     /*
     // MARK: - Navigation

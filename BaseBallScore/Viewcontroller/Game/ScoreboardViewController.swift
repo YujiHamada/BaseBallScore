@@ -1,25 +1,24 @@
 //
-//  ModalViewController.swift
+//  ScoreboardViewController.swift
 //  BaseBallScore
 //
-//  Created by 濱田裕史 on 2018/04/28.
+//  Created by 濱田裕史 on 2018/05/05.
 //  Copyright © 2018年 濱田裕史. All rights reserved.
 //
 
 import UIKit
 
-@objc protocol ModalViewControllerDelegate {
+class ScoreboardViewController: UIViewController{
+
+//    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var opponentLabel: UILabel!
     
-    @objc optional func finishModal() -> Void
-    @objc optional func finishModal(registerd: Bool) ->Void
-}
-
-class ModalViewController: UIViewController {
-    var delegate: ModalViewControllerDelegate! = nil
-
+    var game:Game!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        opponentLabel.text = game.opponent
+        opponentLabel.sizeToFit()
         // Do any additional setup after loading the view.
     }
 
