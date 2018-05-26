@@ -8,7 +8,7 @@
 
 import Foundation
 import RealmSwift
-class Team: Object {
+class Team: RealmUtilObject {
     @objc dynamic var id:String =  NSUUID().uuidString
     @objc dynamic var name:String?
     @objc dynamic var created: Double = NSDate().timeIntervalSince1970
@@ -16,12 +16,5 @@ class Team: Object {
     
     override static func primaryKey() -> String? {
         return "id"
-    }
-    
-    func save() -> Void{
-        let realm = try! Realm()
-        try! realm.write {
-            realm.add(self, update: true)
-        }
     }
 }

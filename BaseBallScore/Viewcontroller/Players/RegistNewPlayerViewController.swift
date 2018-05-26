@@ -108,6 +108,7 @@ class RegistNewPlayerViewController: UIViewController, ModalViewControllerDelega
         }
         
     }
+    
     @IBAction func register(_ sender: Any) {
         let player = Player()
         

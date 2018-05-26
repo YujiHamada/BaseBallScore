@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class Game: Object {
+class Game: RealmUtilObject {
     @objc dynamic var id:String =  NSUUID().uuidString
     @objc dynamic var opponent:String?
     @objc dynamic var date:Date?
@@ -19,12 +19,5 @@ class Game: Object {
     
     override static func primaryKey() -> String? {
         return "id"
-    }
-    
-    func save() -> Void{
-        let realm = try! Realm()
-        try! realm.write {
-            realm.add(self, update: true)
-        }
     }
 }

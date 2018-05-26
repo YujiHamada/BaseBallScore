@@ -9,13 +9,18 @@
 import UIKit
 import RealmSwift
 
-class RegistStartingLineupTableViewController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class RegistStartingLineupTableViewController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
     var players:Results<Player> = Player.getAll()
+    var game:Game!
     let positions = Postion.cases
     let toolBar:UIToolbar = UIToolbar()
     let positionPickerView = UIPickerView()
-    let playerPickerView = UIPickerView()
+    let battingOrderPickerView = UIPickerView()
+    var battingOrderArray:Array<Int>?
+    var currentPickingTextView: StartingLineupCellTextField?
+    var orders: Dictionary<Int, Order> = [:]
+    var gameID: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +29,18 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
         toolBar.isTranslucent = true
         toolBar.tintColor = UIColor.blue
         toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "閉じる", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
+        toolBar.setItems([doneButton], animated: true)
 
         positionPickerView.tag = 0
         positionPickerView.delegate = self
         
-        playerPickerView.tag = 1
-        playerPickerView.delegate = self
+        battingOrderPickerView.tag = 1
+        battingOrderPickerView.delegate = self
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        battingOrderArray = Array(1...players.count)
+        
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -43,15 +48,37 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 1;
+        if pickerView.tag == 0 {
+            return positions.count
+        } else {
+            return players.count
+        }
     }
     
      func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView.tag == 0{
+        if pickerView.tag == 0 {
             return positions[row].name()
         } else {
+//            battingOrderArray = Array(1...players.count)
+//            return String(battingOrderArray![row])
             return players[row].name
         }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        if currentPickingTextView?.tag == 0 {
+            currentPickingTextView?.text = "\(positions[row].name())"
+        }else {
+            currentPickingTextView?.text = "\(players[row].name!)"
+            currentPickingTextView?.playerID = players[row].id
+            print(players[row].name!)
+            print(currentPickingTextView?.playerID)
+        }
+    }
+    
+    func textFieldDidBeginEditing(_ textField:UITextField) {
+        currentPickingTextView = textField as? StartingLineupCellTextField
     }
     
     @IBAction func insertRows(_ sender: Any) {
@@ -59,6 +86,26 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
     }
     
     @IBAction func regist(_ sender: Any) {
+        for sectionNumber in 0...tableView.numberOfSections-1 {
+            for rowNumber in 0...tableView.numberOfRows(inSection: sectionNumber)-1 {
+                if let cell: StartingLineupTableViewCell = tableView.cellForRow(at: IndexPath(row: rowNumber, section: sectionNumber)) as? StartingLineupTableViewCell{
+
+                    if !(cell.playerNameTextField.text?.isEmpty ?? true) && !(cell.positionTextField.text?.isEmpty ?? true){
+                        let order: Order = Order();
+                        order.game_id = game.id
+                        order.player_id = cell.playerNameTextField.playerID
+                        order.positon = Postion.getByName(name: cell.positionTextField.text!)?.rawValue
+                        order.batting_order = rowNumber
+                    }
+                    
+                }
+            }
+        }
+        
+        let alert: UIAlertController = UIAlertController(title: "出場選手登録が完了しました", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        let okAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
         
     }
     override func didReceiveMemoryWarning() {
@@ -83,16 +130,26 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "StartingLineupTableViewCell", for: indexPath) as! StartingLineupTableViewCell
         
-        cell.playerTextField.inputAccessoryView = toolBar
-        cell.playerTextField.inputView = playerPickerView
+        cell.battingOrderLabel.text = String(indexPath.row)
+        cell.battingOrderLabel.sizeToFit()
+//        cell.player = players[indexPath.row]
+        
+        cell.playerNameTextField.inputAccessoryView = toolBar
+        cell.playerNameTextField.inputView = battingOrderPickerView
+        cell.playerNameTextField.delegate = self
+
         cell.positionTextField.inputAccessoryView = toolBar
         cell.positionTextField.inputView = positionPickerView
+        cell.positionTextField.delegate = self
         
+        cell.tag = indexPath.row
         
-
-        // Configure the cell...
-
         return cell
+    }
+    
+    
+    @objc func donePicker(){
+        currentPickingTextView?.endEditing(true)
     }
 
     /*

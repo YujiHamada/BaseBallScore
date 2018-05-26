@@ -9,10 +9,10 @@
 import Foundation
 import RealmSwift
 
-class Player: Object {
+class Player: RealmUtilObject {
     
     @objc dynamic var id:String =  NSUUID().uuidString
-    @objc dynamic var name:String?
+    @objc dynamic var name:String!
     @objc dynamic var mainPosition:String?
     @objc dynamic var subPosition:String?
     @objc dynamic var uniformNumber:String?
@@ -24,10 +24,5 @@ class Player: Object {
     
     override static func primaryKey() -> String? {
         return "id"
-    }
-    
-    static func getAll()->Results<Player>{
-        let realm = try! Realm()
-        return realm.objects(Player.self)
     }
 }

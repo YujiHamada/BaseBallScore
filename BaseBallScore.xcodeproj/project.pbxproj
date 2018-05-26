@@ -48,6 +48,7 @@
 		CA3865CD2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */; };
 		CA3865CE2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */; };
 		CA3865CF2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */; };
+		CA71CBDC20B94BF80039DB06 /* RealmUtilObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CBDB20B94BF80039DB06 /* RealmUtilObject.swift */; };
 		CAC7A3A6207D06250070A8E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A5207D06250070A8E2 /* Player.swift */; };
 		CAC7A3A7207D06250070A8E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A5207D06250070A8E2 /* Player.swift */; };
 		CAC7A3A8207D06250070A8E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A5207D06250070A8E2 /* Player.swift */; };
@@ -156,6 +157,7 @@
 		CA3865C32078C2AD004F18BF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CA3865C72078C477004F18BF /* RegistPlayers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistPlayers.storyboard; sourceTree = "<group>"; };
 		CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistNewPlayerViewController.swift; sourceTree = "<group>"; };
+		CA71CBDB20B94BF80039DB06 /* RealmUtilObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtilObject.swift; sourceTree = "<group>"; };
 		CAC7A3A5207D06250070A8E2 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		CAC7A3A9207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePlayersTabViewController.swift; sourceTree = "<group>"; };
 		CAC7A3AD207F9E190070A8E2 /* PlayersTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayersTable.storyboard; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				CA3820122094AB3F00B34FE0 /* Team.swift */,
 				CA3820242095B74100B34FE0 /* Game.swift */,
 				CAD656CA20A80F5E00262C2A /* Order.swift */,
+				CA71CBDB20B94BF80039DB06 /* RealmUtilObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				CA3820252095B74100B34FE0 /* Game.swift in Sources */,
 				CAC7A3B6207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */,
 				CAD65691209C0D7900262C2A /* GamesTableViewController.swift in Sources */,
+				CA71CBDC20B94BF80039DB06 /* RealmUtilObject.swift in Sources */,
 				CAD656B7209D863600262C2A /* ModalViewProtocol.swift in Sources */,
 				CAC7A3BB207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */,
 				CAD656AE209D7A6800262C2A /* Position.swift in Sources */,

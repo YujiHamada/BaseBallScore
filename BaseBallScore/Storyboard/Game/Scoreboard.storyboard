@@ -22,6 +22,9 @@
                                 <rect key="frame" x="141" y="128" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="出場選手登録"/>
+                                <connections>
+                                    <action selector="registStartingLineup:" destination="t9X-hc-L84" eventType="touchUpInside" id="YF0-ci-wdD"/>
+                                </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Zf-nQ-C5n">
                                 <rect key="frame" x="0.0" y="196" width="375" height="471"/>

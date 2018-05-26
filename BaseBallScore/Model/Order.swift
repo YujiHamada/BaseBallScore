@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class Order: Object {
+class Order: RealmUtilObject {
     @objc dynamic var id:String =    NSUUID().uuidString
     @objc dynamic var game_id:String!
     @objc dynamic var player_id:String!

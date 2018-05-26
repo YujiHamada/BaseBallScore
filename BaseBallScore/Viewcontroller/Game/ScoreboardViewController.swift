@@ -27,7 +27,15 @@ class ScoreboardViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func registStartingLineup(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "RegistStartingLineup", bundle: nil)
+        let viewController:RegistStartingLineupTableViewController = storyboard.instantiateViewController(withIdentifier: "RegistStartingLineupTableViewController") as! RegistStartingLineupTableViewController
+        viewController.game = game
+        self.present(viewController, animated: true, completion: nil)
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 
