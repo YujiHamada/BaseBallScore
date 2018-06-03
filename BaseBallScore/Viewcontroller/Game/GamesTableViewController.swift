@@ -47,15 +47,17 @@ class GamesTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "GamesTableViewCell", for: indexPath) as! GamesTableViewCell
         
-        let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "yyyy-MM-dd"
-//        cell.date.text = dateformatter.date(from: games![indexPath.row].date)
-        cell.date.text = dateformatter.string(from: games![indexPath.row].date!)
+        if let game:Game = games?[indexPath.row] {
+            let dateformatter = DateFormatter()
+            dateformatter.dateFormat = "yyyy-MM-dd"
+            cell.date.text = dateformatter.string(from: game.date!)
+            
+            cell.opponent.text = game.opponent
+            
+            cell.date.sizeToFit()
+            cell.opponent.sizeToFit()
+        }
         
-        cell.opponent.text = games![indexPath.row].opponent
-        
-        cell.date.sizeToFit()
-        cell.opponent.sizeToFit()
         
         return cell
     }

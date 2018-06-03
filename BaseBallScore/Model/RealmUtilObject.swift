@@ -18,8 +18,12 @@ class RealmUtilObject: Object {
         }
     }
     
-    static func getAll()->Results<Player>{
-        let realm = try! Realm()
-        return realm.objects(Player.self)
+//    static func getAll()->Results<self.cla>{
+//        let realm = try! Realm()
+//        return realm.objects(Player.self)
+//    }
+    
+    func deleteAll() {
+//        self.getAll()
     }
 }

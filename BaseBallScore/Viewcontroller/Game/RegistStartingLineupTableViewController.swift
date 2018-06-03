@@ -21,6 +21,7 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
     var currentPickingTextView: StartingLineupCellTextField?
     var orders: Dictionary<Int, Order> = [:]
     var gameID: String!
+    var delegate: ModalViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,12 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
         
         battingOrderArray = Array(1...players.count)
         
+//        let orders:Results<Order> = Order.getAll()
+//        print(orders.count)
+//        for order:Order in orders {
+//            print(order.id)
+//        }
+        
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -49,31 +56,37 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView.tag == 0 {
-            return positions.count
+            return positions.count + 1
         } else {
-            return players.count
+            return players.count + 1
         }
     }
     
      func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        if row == 0 {
+            return "-"
+        }
+        
         if pickerView.tag == 0 {
-            return positions[row].name()
+            return positions[row - 1].name()
         } else {
-//            battingOrderArray = Array(1...players.count)
-//            return String(battingOrderArray![row])
-            return players[row].name
+            return players[row - 1].name
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
+        if row == 0 {
+            return
+        }
+        
         if currentPickingTextView?.tag == 0 {
-            currentPickingTextView?.text = "\(positions[row].name())"
+            currentPickingTextView?.text = "\(positions[row - 1].name())"
         }else {
-            currentPickingTextView?.text = "\(players[row].name!)"
-            currentPickingTextView?.playerID = players[row].id
-            print(players[row].name!)
-            print(currentPickingTextView?.playerID)
+            currentPickingTextView?.text = "\(players[row - 1].name!)"
+            currentPickingTextView?.playerID = players[row - 1].id
+            
         }
     }
     
@@ -92,10 +105,11 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
 
                     if !(cell.playerNameTextField.text?.isEmpty ?? true) && !(cell.positionTextField.text?.isEmpty ?? true){
                         let order: Order = Order();
-                        order.game_id = game.id
-                        order.player_id = cell.playerNameTextField.playerID
+                        order.game = game
+                        order.player = cell.player
                         order.positon = Postion.getByName(name: cell.positionTextField.text!)?.rawValue
                         order.batting_order = rowNumber
+                        order.save()
                     }
                     
                 }
@@ -106,7 +120,7 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
         let okAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
-        
+        delegate.finishModal!()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -130,9 +144,9 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "StartingLineupTableViewCell", for: indexPath) as! StartingLineupTableViewCell
         
-        cell.battingOrderLabel.text = String(indexPath.row)
+        cell.battingOrderLabel.text = String(indexPath.row + 1)
         cell.battingOrderLabel.sizeToFit()
-//        cell.player = players[indexPath.row]
+        cell.player = players[indexPath.row]
         
         cell.playerNameTextField.inputAccessoryView = toolBar
         cell.playerNameTextField.inputView = battingOrderPickerView
@@ -151,7 +165,11 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
     @objc func donePicker(){
         currentPickingTextView?.endEditing(true)
     }
-
+    
+    @IBAction func close(_ sender: Any) {
+        delegate.finishModal!()
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

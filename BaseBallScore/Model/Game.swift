@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import RealmSwift
+import  RealmSwift
 
 class Game: RealmUtilObject {
     @objc dynamic var id:String =  NSUUID().uuidString
@@ -20,4 +20,6 @@ class Game: RealmUtilObject {
     override static func primaryKey() -> String? {
         return "id"
     }
+    
+    
 }

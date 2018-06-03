@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ScoreboardViewController: UIViewController{
+class ScoreboardViewController: UIViewController, ModalViewControllerDelegate{
 
 //    @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var opponentLabel: UILabel!
+    var registStartingLineupTableViewController: RegistStartingLineupTableViewController!
     
     var game:Game!
     
@@ -29,11 +30,14 @@ class ScoreboardViewController: UIViewController{
     
     @IBAction func registStartingLineup(_ sender: Any) {
         let storyboard = UIStoryboard(name: "RegistStartingLineup", bundle: nil)
-        let viewController:RegistStartingLineupTableViewController = storyboard.instantiateViewController(withIdentifier: "RegistStartingLineupTableViewController") as! RegistStartingLineupTableViewController
-        viewController.game = game
-        self.present(viewController, animated: true, completion: nil)
+        registStartingLineupTableViewController = storyboard.instantiateViewController(withIdentifier: "RegistStartingLineupTableViewController") as! RegistStartingLineupTableViewController
+        registStartingLineupTableViewController.game = game
+        self.present(registStartingLineupTableViewController, animated: true, completion: nil)
+        registStartingLineupTableViewController.delegate = self
         
-        
+    }
+    func finishModal() -> Void {
+        self.registStartingLineupTableViewController.dismiss(animated: true, completion: nil)
     }
     
     /*

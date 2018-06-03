@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import RealmSwift
+
 class Team: RealmUtilObject {
     @objc dynamic var id:String =  NSUUID().uuidString
     @objc dynamic var name:String?

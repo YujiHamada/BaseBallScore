@@ -24,9 +24,9 @@ enum Postion:Int, EnumEnumerable{
     func name()->String{
         switch self {
             case .Pitcher:
-                return "投手"
+                return "ピッチャー"
             case .Catcher:
-                return "捕手"
+                return "キャッチャー"
             case .First:
                 return "ファースト"
             case .Second:
@@ -48,9 +48,9 @@ enum Postion:Int, EnumEnumerable{
     
     static func getByName(name: String) ->Postion? {
         switch name {
-        case "投手":
+        case "ピッチャー":
             return .Pitcher
-        case "捕手":
+        case "キャッチャー":
             return .Catcher
         case "ファースト":
             return .First

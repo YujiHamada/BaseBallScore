@@ -13,6 +13,7 @@ class StartingLineupTableViewCell: UITableViewCell {
     @IBOutlet weak var positionTextField: StartingLineupCellTextField! = StartingLineupCellTextField()
     @IBOutlet weak var playerNameTextField: StartingLineupCellTextField! = StartingLineupCellTextField()
     @IBOutlet weak var battingOrderLabel: UILabel!
+    var player:Player?
     
     override func awakeFromNib() {
         super.awakeFromNib()

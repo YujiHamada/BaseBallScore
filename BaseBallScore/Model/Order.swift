@@ -7,12 +7,12 @@
 //
 
 import Foundation
-import RealmSwift
+import  RealmSwift
 
 class Order: RealmUtilObject {
     @objc dynamic var id:String =    NSUUID().uuidString
-    @objc dynamic var game_id:String!
-    @objc dynamic var player_id:String!
+    @objc dynamic var game:Game!
+    @objc dynamic var player:Player!
     var positon:Int!
     var batting_order:Int!
     @objc dynamic var created: Double = NSDate().timeIntervalSince1970
@@ -20,5 +20,10 @@ class Order: RealmUtilObject {
     
     override static func primaryKey() -> String? {
         return "id"
+    }
+    
+    static func getAll()->Results<Order>{
+        let realm = try! Realm()
+        return realm.objects(Order.self)
     }
 }

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import RealmSwift
+import  RealmSwift
 
 class Player: RealmUtilObject {
     
@@ -24,5 +24,10 @@ class Player: RealmUtilObject {
     
     override static func primaryKey() -> String? {
         return "id"
+    }
+    
+    static func getAll()->Results<Player>{
+        let realm = try! Realm()
+        return realm.objects(Player.self)
     }
 }
