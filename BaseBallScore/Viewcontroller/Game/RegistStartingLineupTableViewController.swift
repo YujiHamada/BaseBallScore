@@ -105,13 +105,13 @@ class RegistStartingLineupTableViewController: UITableViewController, UIPickerVi
 
                     if !(cell.playerNameTextField.text?.isEmpty ?? true) && !(cell.positionTextField.text?.isEmpty ?? true){
                         let order: Order = Order();
-                        order.game = game
                         order.player = cell.player
                         order.positon = Postion.getByName(name: cell.positionTextField.text!)?.rawValue
                         order.batting_order = rowNumber
-                        order.save()
+                        game.appnedOrder(order: order)
+//                        game.orders.append(order)
+//                        game.save()
                     }
-                    
                 }
             }
         }

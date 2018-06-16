@@ -48,6 +48,45 @@
 		CA3865CD2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */; };
 		CA3865CE2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */; };
 		CA3865CF2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */; };
+		CA390F0E20D50CC200AD829E /* six.png in Resources */ = {isa = PBXBuildFile; fileRef = CA390F0520D50CC100AD829E /* six.png */; };
+		CA390F0F20D50CC200AD829E /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = CA390F0620D50CC100AD829E /* two.png */; };
+		CA390F1020D50CC200AD829E /* eight.png in Resources */ = {isa = PBXBuildFile; fileRef = CA390F0720D50CC100AD829E /* eight.png */; };
+		CA390F1120D50CC200AD829E /* nine.png in Resources */ = {isa = PBXBuildFile; fileRef = CA390F0820D50CC100AD829E /* nine.png */; };
+		CA390F1220D50CC200AD829E /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = CA390F0920D50CC200AD829E /* one.png */; };
+		CA390F1320D50CC200AD829E /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = CA390F0A20D50CC200AD829E /* seven.png */; };
+		CA390F1420D50CC200AD829E /* four.png in Resources */ = {isa = PBXBuildFile; fileRef = CA390F0B20D50CC200AD829E /* four.png */; };
+		CA390F1520D50CC200AD829E /* five.png in Resources */ = {isa = PBXBuildFile; fileRef = CA390F0C20D50CC200AD829E /* five.png */; };
+		CA390F1620D50CC200AD829E /* three.png in Resources */ = {isa = PBXBuildFile; fileRef = CA390F0D20D50CC200AD829E /* three.png */; };
+		CA39E3C320CD099E001B5843 /* ScoreboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3C220CD099E001B5843 /* ScoreboardTableViewCell.swift */; };
+		CA39E3C420CD099E001B5843 /* ScoreboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3C220CD099E001B5843 /* ScoreboardTableViewCell.swift */; };
+		CA39E3C520CD099E001B5843 /* ScoreboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3C220CD099E001B5843 /* ScoreboardTableViewCell.swift */; };
+		CA39E3C720CD0B05001B5843 /* ScoreboardTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3C620CD0B05001B5843 /* ScoreboardTableView.storyboard */; };
+		CA39E3C820CD0B05001B5843 /* ScoreboardTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3C620CD0B05001B5843 /* ScoreboardTableView.storyboard */; };
+		CA39E3C920CD0B05001B5843 /* ScoreboardTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3C620CD0B05001B5843 /* ScoreboardTableView.storyboard */; };
+		CA39E3CB20CD11D3001B5843 /* BattingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3CA20CD11D3001B5843 /* BattingResult.swift */; };
+		CA39E3CC20CD11D3001B5843 /* BattingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3CA20CD11D3001B5843 /* BattingResult.swift */; };
+		CA39E3CD20CD11D3001B5843 /* BattingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3CA20CD11D3001B5843 /* BattingResult.swift */; };
+		CA39E3CF20CD1833001B5843 /* Batting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3CE20CD1833001B5843 /* Batting.swift */; };
+		CA39E3D020CD1833001B5843 /* Batting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3CE20CD1833001B5843 /* Batting.swift */; };
+		CA39E3D120CD1833001B5843 /* Batting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3CE20CD1833001B5843 /* Batting.swift */; };
+		CA39E3D820CE85E8001B5843 /* ScoreField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3D720CE85E8001B5843 /* ScoreField.storyboard */; };
+		CA39E3D920CE85E8001B5843 /* ScoreField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3D720CE85E8001B5843 /* ScoreField.storyboard */; };
+		CA39E3DA20CE85E8001B5843 /* ScoreField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3D720CE85E8001B5843 /* ScoreField.storyboard */; };
+		CA39E3DC20CE865C001B5843 /* baseball_field.png in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3DB20CE865C001B5843 /* baseball_field.png */; };
+		CA39E3DD20CE865C001B5843 /* baseball_field.png in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3DB20CE865C001B5843 /* baseball_field.png */; };
+		CA39E3DE20CE865C001B5843 /* baseball_field.png in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3DB20CE865C001B5843 /* baseball_field.png */; };
+		CA39E3E020CE8832001B5843 /* ScoreFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3DF20CE8832001B5843 /* ScoreFieldViewController.swift */; };
+		CA39E3E120CE8832001B5843 /* ScoreFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3DF20CE8832001B5843 /* ScoreFieldViewController.swift */; };
+		CA39E3E220CE8832001B5843 /* ScoreFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3DF20CE8832001B5843 /* ScoreFieldViewController.swift */; };
+		CA39E3E420D133A1001B5843 /* RegistScoreDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3E320D133A1001B5843 /* RegistScoreDetail.storyboard */; };
+		CA39E3E520D133A1001B5843 /* RegistScoreDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3E320D133A1001B5843 /* RegistScoreDetail.storyboard */; };
+		CA39E3E620D133A1001B5843 /* RegistScoreDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39E3E320D133A1001B5843 /* RegistScoreDetail.storyboard */; };
+		CA39E3E820D133CD001B5843 /* RegistScoreDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3E720D133CD001B5843 /* RegistScoreDetailTableViewController.swift */; };
+		CA39E3E920D133CD001B5843 /* RegistScoreDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3E720D133CD001B5843 /* RegistScoreDetailTableViewController.swift */; };
+		CA39E3EA20D133CD001B5843 /* RegistScoreDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3E720D133CD001B5843 /* RegistScoreDetailTableViewController.swift */; };
+		CA39E3EC20D13400001B5843 /* RegistScoreDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3EB20D13400001B5843 /* RegistScoreDetailTableViewCell.swift */; };
+		CA39E3ED20D13400001B5843 /* RegistScoreDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3EB20D13400001B5843 /* RegistScoreDetailTableViewCell.swift */; };
+		CA39E3EE20D13400001B5843 /* RegistScoreDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39E3EB20D13400001B5843 /* RegistScoreDetailTableViewCell.swift */; };
 		CA71CBDC20B94BF80039DB06 /* RealmUtilObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CBDB20B94BF80039DB06 /* RealmUtilObject.swift */; };
 		CAC7A3A6207D06250070A8E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A5207D06250070A8E2 /* Player.swift */; };
 		CAC7A3A7207D06250070A8E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7A3A5207D06250070A8E2 /* Player.swift */; };
@@ -101,12 +140,13 @@
 		CAD656C3209DCF4500262C2A /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656C2209DCF4500262C2A /* ScoreboardViewController.swift */; };
 		CAD656C4209DCF4500262C2A /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656C2209DCF4500262C2A /* ScoreboardViewController.swift */; };
 		CAD656C5209DCF4500262C2A /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656C2209DCF4500262C2A /* ScoreboardViewController.swift */; };
-		CAD656C7209ED41800262C2A /* ScoreBoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656C6209ED41800262C2A /* ScoreBoardTableViewController.swift */; };
-		CAD656C8209ED41800262C2A /* ScoreBoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656C6209ED41800262C2A /* ScoreBoardTableViewController.swift */; };
-		CAD656C9209ED41800262C2A /* ScoreBoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656C6209ED41800262C2A /* ScoreBoardTableViewController.swift */; };
+		CAD656C7209ED41800262C2A /* ScoreboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656C6209ED41800262C2A /* ScoreboardTableViewController.swift */; };
+		CAD656C8209ED41800262C2A /* ScoreboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656C6209ED41800262C2A /* ScoreboardTableViewController.swift */; };
+		CAD656C9209ED41800262C2A /* ScoreboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656C6209ED41800262C2A /* ScoreboardTableViewController.swift */; };
 		CAD656CB20A80F5E00262C2A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656CA20A80F5E00262C2A /* Order.swift */; };
 		CAD656CC20A80F5E00262C2A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656CA20A80F5E00262C2A /* Order.swift */; };
 		CAD656CD20A80F5E00262C2A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD656CA20A80F5E00262C2A /* Order.swift */; };
+		CAFCFD0620C3C5A1000C6951 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCFD0520C3C5A1000C6951 /* Score.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +197,25 @@
 		CA3865C32078C2AD004F18BF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CA3865C72078C477004F18BF /* RegistPlayers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistPlayers.storyboard; sourceTree = "<group>"; };
 		CA3865CC2078CB7A004F18BF /* RegistNewPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistNewPlayerViewController.swift; sourceTree = "<group>"; };
+		CA390F0520D50CC100AD829E /* six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = six.png; sourceTree = "<group>"; };
+		CA390F0620D50CC100AD829E /* two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two.png; sourceTree = "<group>"; };
+		CA390F0720D50CC100AD829E /* eight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eight.png; sourceTree = "<group>"; };
+		CA390F0820D50CC100AD829E /* nine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nine.png; sourceTree = "<group>"; };
+		CA390F0920D50CC200AD829E /* one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one.png; sourceTree = "<group>"; };
+		CA390F0A20D50CC200AD829E /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
+		CA390F0B20D50CC200AD829E /* four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = four.png; sourceTree = "<group>"; };
+		CA390F0C20D50CC200AD829E /* five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = five.png; sourceTree = "<group>"; };
+		CA390F0D20D50CC200AD829E /* three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = three.png; sourceTree = "<group>"; };
+		CA39E3C220CD099E001B5843 /* ScoreboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardTableViewCell.swift; sourceTree = "<group>"; };
+		CA39E3C620CD0B05001B5843 /* ScoreboardTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScoreboardTableView.storyboard; sourceTree = "<group>"; };
+		CA39E3CA20CD11D3001B5843 /* BattingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattingResult.swift; sourceTree = "<group>"; };
+		CA39E3CE20CD1833001B5843 /* Batting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Batting.swift; sourceTree = "<group>"; };
+		CA39E3D720CE85E8001B5843 /* ScoreField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScoreField.storyboard; sourceTree = "<group>"; };
+		CA39E3DB20CE865C001B5843 /* baseball_field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseball_field.png; sourceTree = "<group>"; };
+		CA39E3DF20CE8832001B5843 /* ScoreFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFieldViewController.swift; sourceTree = "<group>"; };
+		CA39E3E320D133A1001B5843 /* RegistScoreDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistScoreDetail.storyboard; sourceTree = "<group>"; };
+		CA39E3E720D133CD001B5843 /* RegistScoreDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistScoreDetailTableViewController.swift; sourceTree = "<group>"; };
+		CA39E3EB20D13400001B5843 /* RegistScoreDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistScoreDetailTableViewCell.swift; sourceTree = "<group>"; };
 		CA71CBDB20B94BF80039DB06 /* RealmUtilObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtilObject.swift; sourceTree = "<group>"; };
 		CAC7A3A5207D06250070A8E2 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		CAC7A3A9207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePlayersTabViewController.swift; sourceTree = "<group>"; };
@@ -176,8 +235,9 @@
 		CAD656BA209DC00200262C2A /* Scoreboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scoreboard.storyboard; sourceTree = "<group>"; };
 		CAD656BE209DC86600262C2A /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		CAD656C2209DCF4500262C2A /* ScoreboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewController.swift; sourceTree = "<group>"; };
-		CAD656C6209ED41800262C2A /* ScoreBoardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardTableViewController.swift; sourceTree = "<group>"; };
+		CAD656C6209ED41800262C2A /* ScoreboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardTableViewController.swift; sourceTree = "<group>"; };
 		CAD656CA20A80F5E00262C2A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		CAFCFD0520C3C5A1000C6951 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		E454DDBF094B4B471AFD0E51 /* Pods-BaseBallScoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseBallScoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseBallScoreUITests/Pods-BaseBallScoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +336,9 @@
 				CAD6568A209C0B1300262C2A /* GamesTable.storyboard */,
 				CAD656A0209D6B7000262C2A /* RegistStartingLineup.storyboard */,
 				CAD656BA209DC00200262C2A /* Scoreboard.storyboard */,
+				CA39E3C620CD0B05001B5843 /* ScoreboardTableView.storyboard */,
+				CA39E3D720CE85E8001B5843 /* ScoreField.storyboard */,
+				CA39E3E320D133A1001B5843 /* RegistScoreDetail.storyboard */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -288,7 +351,9 @@
 				CAD65690209C0D7900262C2A /* GamesTableViewController.swift */,
 				CAD656A4209D6E5C00262C2A /* RegistStartingLineupTableViewController.swift */,
 				CAD656C2209DCF4500262C2A /* ScoreboardViewController.swift */,
-				CAD656C6209ED41800262C2A /* ScoreBoardTableViewController.swift */,
+				CAD656C6209ED41800262C2A /* ScoreboardTableViewController.swift */,
+				CA39E3DF20CE8832001B5843 /* ScoreFieldViewController.swift */,
+				CA39E3E720D133CD001B5843 /* RegistScoreDetailTableViewController.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -318,6 +383,7 @@
 		CA3865912078C07E004F18BF /* BaseBallScore */ = {
 			isa = PBXGroup;
 			children = (
+				CA39E3D220CE85B7001B5843 /* images */,
 				CAD656B1209D801700262C2A /* lib */,
 				CAD656AC209D7A5400262C2A /* enum */,
 				CAC7A3B9207FA81E0070A8E2 /* Cell */,
@@ -371,6 +437,23 @@
 			path = Viewcontroller;
 			sourceTree = "<group>";
 		};
+		CA39E3D220CE85B7001B5843 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CA390F0720D50CC100AD829E /* eight.png */,
+				CA390F0C20D50CC200AD829E /* five.png */,
+				CA390F0B20D50CC200AD829E /* four.png */,
+				CA390F0820D50CC100AD829E /* nine.png */,
+				CA390F0920D50CC200AD829E /* one.png */,
+				CA390F0A20D50CC200AD829E /* seven.png */,
+				CA390F0520D50CC100AD829E /* six.png */,
+				CA390F0D20D50CC200AD829E /* three.png */,
+				CA390F0620D50CC100AD829E /* two.png */,
+				CA39E3DB20CE865C001B5843 /* baseball_field.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		CAC7A3A4207D00C80070A8E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +462,8 @@
 				CA3820242095B74100B34FE0 /* Game.swift */,
 				CAD656CA20A80F5E00262C2A /* Order.swift */,
 				CA71CBDB20B94BF80039DB06 /* RealmUtilObject.swift */,
+				CAFCFD0520C3C5A1000C6951 /* Score.swift */,
+				CA39E3CA20CD11D3001B5843 /* BattingResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -389,6 +474,8 @@
 				CAC7A3BA207FA8440070A8E2 /* PlayersTableViewCell.swift */,
 				CAD65694209C0DFC00262C2A /* GamesTableViewCell.swift */,
 				CAD656A8209D78B300262C2A /* StartingLineupTableViewCell.swift */,
+				CA39E3C220CD099E001B5843 /* ScoreboardTableViewCell.swift */,
+				CA39E3EB20D13400001B5843 /* RegistScoreDetailTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -397,6 +484,7 @@
 			isa = PBXGroup;
 			children = (
 				CAD656AD209D7A6800262C2A /* Position.swift */,
+				CA39E3CE20CD1833001B5843 /* Batting.swift */,
 			);
 			path = enum;
 			sourceTree = "<group>";
@@ -519,18 +607,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39E3E420D133A1001B5843 /* RegistScoreDetail.storyboard in Resources */,
+				CA390F1120D50CC200AD829E /* nine.png in Resources */,
+				CA39E3C720CD0B05001B5843 /* ScoreboardTableView.storyboard in Resources */,
 				CA38659D2078C080004F18BF /* LaunchScreen.storyboard in Resources */,
 				CAD6568B209C0B1300262C2A /* GamesTable.storyboard in Resources */,
+				CA390F1520D50CC200AD829E /* five.png in Resources */,
+				CA390F1020D50CC200AD829E /* eight.png in Resources */,
 				CA38659A2078C080004F18BF /* Assets.xcassets in Resources */,
+				CA39E3DC20CE865C001B5843 /* baseball_field.png in Resources */,
+				CA390F0F20D50CC200AD829E /* two.png in Resources */,
 				CA3820182095930800B34FE0 /* StartGame.storyboard in Resources */,
+				CA390F0E20D50CC200AD829E /* six.png in Resources */,
+				CA390F1320D50CC200AD829E /* seven.png in Resources */,
 				CAD656BB209DC00200262C2A /* Scoreboard.storyboard in Resources */,
+				CA390F1220D50CC200AD829E /* one.png in Resources */,
 				CA381FF3209498E600B34FE0 /* ManageGame.storyboard in Resources */,
+				CA39E3D820CE85E8001B5843 /* ScoreField.storyboard in Resources */,
 				CAC7A3AE207F9E190070A8E2 /* PlayersTable.storyboard in Resources */,
+				CA390F1420D50CC200AD829E /* four.png in Resources */,
 				CAD656A1209D6B7000262C2A /* RegistStartingLineup.storyboard in Resources */,
 				CA381FFB20949DC600B34FE0 /* ManageTeam.storyboard in Resources */,
 				CAD6569D209C268C00262C2A /* ManagePlayers.storyboard in Resources */,
 				CA3865C42078C2AD004F18BF /* Main.storyboard in Resources */,
 				CA3865C82078C477004F18BF /* RegistPlayers.storyboard in Resources */,
+				CA390F1620D50CC200AD829E /* three.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,10 +643,14 @@
 				CA381FF4209498E600B34FE0 /* ManageGame.storyboard in Resources */,
 				CA3865C92078C477004F18BF /* RegistPlayers.storyboard in Resources */,
 				CAD6569E209C268C00262C2A /* ManagePlayers.storyboard in Resources */,
+				CA39E3D920CE85E8001B5843 /* ScoreField.storyboard in Resources */,
+				CA39E3C820CD0B05001B5843 /* ScoreboardTableView.storyboard in Resources */,
+				CA39E3E520D133A1001B5843 /* RegistScoreDetail.storyboard in Resources */,
 				CA3865C52078C2AD004F18BF /* Main.storyboard in Resources */,
 				CAD656A2209D6B7000262C2A /* RegistStartingLineup.storyboard in Resources */,
 				CAC7A3AF207F9E190070A8E2 /* PlayersTable.storyboard in Resources */,
 				CAD656BC209DC00200262C2A /* Scoreboard.storyboard in Resources */,
+				CA39E3DD20CE865C001B5843 /* baseball_field.png in Resources */,
 				CA3820192095930800B34FE0 /* StartGame.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,10 +663,14 @@
 				CA381FF5209498E600B34FE0 /* ManageGame.storyboard in Resources */,
 				CA3865CA2078C477004F18BF /* RegistPlayers.storyboard in Resources */,
 				CAD6569F209C268C00262C2A /* ManagePlayers.storyboard in Resources */,
+				CA39E3DA20CE85E8001B5843 /* ScoreField.storyboard in Resources */,
+				CA39E3C920CD0B05001B5843 /* ScoreboardTableView.storyboard in Resources */,
+				CA39E3E620D133A1001B5843 /* RegistScoreDetail.storyboard in Resources */,
 				CA3865C62078C2AD004F18BF /* Main.storyboard in Resources */,
 				CAD656A3209D6B7000262C2A /* RegistStartingLineup.storyboard in Resources */,
 				CAC7A3B0207F9E190070A8E2 /* PlayersTable.storyboard in Resources */,
 				CAD656BD209DC00200262C2A /* Scoreboard.storyboard in Resources */,
+				CA39E3DE20CE865C001B5843 /* baseball_field.png in Resources */,
 				CA38201A2095930800B34FE0 /* StartGame.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,17 +761,23 @@
 			files = (
 				CA381FF720949C2F00B34FE0 /* ManageTeamViewController.swift in Sources */,
 				CAC7A3AA207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift in Sources */,
-				CAD656C7209ED41800262C2A /* ScoreBoardTableViewController.swift in Sources */,
+				CA39E3CF20CD1833001B5843 /* Batting.swift in Sources */,
+				CAD656C7209ED41800262C2A /* ScoreboardTableViewController.swift in Sources */,
 				CAD656B3209D802500262C2A /* EnumEnumerable.swift in Sources */,
 				CAD656CB20A80F5E00262C2A /* Order.swift in Sources */,
 				CAC7A3A6207D06250070A8E2 /* Player.swift in Sources */,
+				CA39E3EC20D13400001B5843 /* RegistScoreDetailTableViewCell.swift in Sources */,
 				CAD656C3209DCF4500262C2A /* ScoreboardViewController.swift in Sources */,
 				CA3820252095B74100B34FE0 /* Game.swift in Sources */,
 				CAC7A3B6207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */,
 				CAD65691209C0D7900262C2A /* GamesTableViewController.swift in Sources */,
+				CA39E3C320CD099E001B5843 /* ScoreboardTableViewCell.swift in Sources */,
+				CA39E3E820D133CD001B5843 /* RegistScoreDetailTableViewController.swift in Sources */,
+				CAFCFD0620C3C5A1000C6951 /* Score.swift in Sources */,
 				CA71CBDC20B94BF80039DB06 /* RealmUtilObject.swift in Sources */,
 				CAD656B7209D863600262C2A /* ModalViewProtocol.swift in Sources */,
 				CAC7A3BB207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */,
+				CA39E3E020CE8832001B5843 /* ScoreFieldViewController.swift in Sources */,
 				CAD656AE209D7A6800262C2A /* Position.swift in Sources */,
 				CA3865CD2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */,
 				CAD656BF209DC86600262C2A /* extension.swift in Sources */,
@@ -670,6 +785,7 @@
 				CA3820132094AB3F00B34FE0 /* Team.swift in Sources */,
 				CAD656A5209D6E5C00262C2A /* RegistStartingLineupTableViewController.swift in Sources */,
 				CA38201D2095934800B34FE0 /* ManageGameViewController.swift in Sources */,
+				CA39E3CB20CD11D3001B5843 /* BattingResult.swift in Sources */,
 				CA3865932078C07E004F18BF /* AppDelegate.swift in Sources */,
 				CAD65695209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */,
 				CA3820212095935C00B34FE0 /* StartGameViewController.swift in Sources */,
@@ -680,15 +796,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39E3E120CE8832001B5843 /* ScoreFieldViewController.swift in Sources */,
+				CA39E3C420CD099E001B5843 /* ScoreboardTableViewCell.swift in Sources */,
 				CA38201E2095934800B34FE0 /* ManageGameViewController.swift in Sources */,
 				CA3820142094AB3F00B34FE0 /* Team.swift in Sources */,
-				CAD656C8209ED41800262C2A /* ScoreBoardTableViewController.swift in Sources */,
+				CAD656C8209ED41800262C2A /* ScoreboardTableViewController.swift in Sources */,
 				CAD656B4209D802500262C2A /* EnumEnumerable.swift in Sources */,
 				CAD656CC20A80F5E00262C2A /* Order.swift in Sources */,
 				CAD65696209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */,
 				CAD656C4209DCF4500262C2A /* ScoreboardViewController.swift in Sources */,
 				CA3865A82078C081004F18BF /* BaseBallScoreTests.swift in Sources */,
 				CA381FF820949C2F00B34FE0 /* ManageTeamViewController.swift in Sources */,
+				CA39E3D020CD1833001B5843 /* Batting.swift in Sources */,
 				CAD656B8209D863600262C2A /* ModalViewProtocol.swift in Sources */,
 				CAC7A3A7207D06250070A8E2 /* Player.swift in Sources */,
 				CAD656AF209D7A6800262C2A /* Position.swift in Sources */,
@@ -696,11 +815,14 @@
 				CAD656AA209D78B300262C2A /* StartingLineupTableViewCell.swift in Sources */,
 				CAD656C0209DC86600262C2A /* extension.swift in Sources */,
 				CA3820262095B74100B34FE0 /* Game.swift in Sources */,
+				CA39E3ED20D13400001B5843 /* RegistScoreDetailTableViewCell.swift in Sources */,
 				CAC7A3BC207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */,
 				CAD656A6209D6E5C00262C2A /* RegistStartingLineupTableViewController.swift in Sources */,
 				CAC7A3AB207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift in Sources */,
 				CAD65692209C0D7900262C2A /* GamesTableViewController.swift in Sources */,
 				CA3865CE2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */,
+				CA39E3E920D133CD001B5843 /* RegistScoreDetailTableViewController.swift in Sources */,
+				CA39E3CC20CD11D3001B5843 /* BattingResult.swift in Sources */,
 				CAC7A3B7207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,15 +831,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39E3E220CE8832001B5843 /* ScoreFieldViewController.swift in Sources */,
+				CA39E3C520CD099E001B5843 /* ScoreboardTableViewCell.swift in Sources */,
 				CA38201F2095934800B34FE0 /* ManageGameViewController.swift in Sources */,
 				CA3820152094AB3F00B34FE0 /* Team.swift in Sources */,
-				CAD656C9209ED41800262C2A /* ScoreBoardTableViewController.swift in Sources */,
+				CAD656C9209ED41800262C2A /* ScoreboardTableViewController.swift in Sources */,
 				CAD656B5209D802500262C2A /* EnumEnumerable.swift in Sources */,
 				CAD656CD20A80F5E00262C2A /* Order.swift in Sources */,
 				CAD65697209C0DFC00262C2A /* GamesTableViewCell.swift in Sources */,
 				CAD656C5209DCF4500262C2A /* ScoreboardViewController.swift in Sources */,
 				CA3865B32078C081004F18BF /* BaseBallScoreUITests.swift in Sources */,
 				CA381FF920949C2F00B34FE0 /* ManageTeamViewController.swift in Sources */,
+				CA39E3D120CD1833001B5843 /* Batting.swift in Sources */,
 				CAD656B9209D863600262C2A /* ModalViewProtocol.swift in Sources */,
 				CAC7A3A8207D06250070A8E2 /* Player.swift in Sources */,
 				CAD656B0209D7A6800262C2A /* Position.swift in Sources */,
@@ -725,11 +850,14 @@
 				CAD656AB209D78B300262C2A /* StartingLineupTableViewCell.swift in Sources */,
 				CAD656C1209DC86600262C2A /* extension.swift in Sources */,
 				CA3820272095B74100B34FE0 /* Game.swift in Sources */,
+				CA39E3EE20D13400001B5843 /* RegistScoreDetailTableViewCell.swift in Sources */,
 				CAC7A3BD207FA8440070A8E2 /* PlayersTableViewCell.swift in Sources */,
 				CAD656A7209D6E5C00262C2A /* RegistStartingLineupTableViewController.swift in Sources */,
 				CAC7A3AC207F9D0E0070A8E2 /* ManagePlayersTabViewController.swift in Sources */,
 				CAD65693209C0D7900262C2A /* GamesTableViewController.swift in Sources */,
 				CA3865CF2078CB7A004F18BF /* RegistNewPlayerViewController.swift in Sources */,
+				CA39E3EA20D133CD001B5843 /* RegistScoreDetailTableViewController.swift in Sources */,
+				CA39E3CD20CD11D3001B5843 /* BattingResult.swift in Sources */,
 				CAC7A3B8207F9E6A0070A8E2 /* PlayersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

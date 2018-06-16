@@ -10,7 +10,7 @@ import UIKit
 
 class ScoreboardViewController: UIViewController, ModalViewControllerDelegate{
 
-//    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var scoreboardTableUIView: UIView!
     @IBOutlet weak var opponentLabel: UILabel!
     var registStartingLineupTableViewController: RegistStartingLineupTableViewController!
     
@@ -20,7 +20,19 @@ class ScoreboardViewController: UIViewController, ModalViewControllerDelegate{
         super.viewDidLoad()
         opponentLabel.text = game.opponent
         opponentLabel.sizeToFit()
-        // Do any additional setup after loading the view.
+//        for order:Order in game.orders {
+//            print(order.player.name)
+//        }
+        
+        let storyboard = UIStoryboard(name: "ScoreboardTableView", bundle: nil)
+        let childViewController: ScoreboardTableViewController = storyboard.instantiateViewController(withIdentifier: "ScoreboardTableViewController") as! ScoreboardTableViewController
+        
+//        childViewController.tableView.register(ScoreboardTableViewCell.self, forCellReuseIdentifier: "ScoreboardTableViewCell")
+        childViewController.game = game
+        addChildViewController(childViewController)
+        scoreboardTableUIView.addSubview(childViewController.view)
+        childViewController.didMove(toParentViewController: self)
+        
     }
 
     override func didReceiveMemoryWarning() {

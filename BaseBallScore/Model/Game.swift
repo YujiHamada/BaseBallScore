@@ -14,6 +14,9 @@ class Game: RealmUtilObject {
     @objc dynamic var opponent:String?
     @objc dynamic var date:Date?
     var is_bat_first:Bool?
+    let scores = List<Score>()
+    let orders = List<Order>()
+    let battingResult = List<BattingResult>()
     @objc dynamic var created: Double = NSDate().timeIntervalSince1970
     @objc dynamic var updated: Double = NSDate().timeIntervalSince1970
     
@@ -21,5 +24,10 @@ class Game: RealmUtilObject {
         return "id"
     }
     
-    
+    func appnedOrder(order: Order) -> Void{
+        let realm = try! Realm()
+        try! realm.write {
+            self.orders.append(order)
+        }
+    }
 }

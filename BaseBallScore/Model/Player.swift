@@ -22,12 +22,12 @@ class Player: RealmUtilObject {
     @objc dynamic var created: Double = NSDate().timeIntervalSince1970
     @objc dynamic var updated: Double = NSDate().timeIntervalSince1970
     
-    override static func primaryKey() -> String? {
-        return "id"
-    }
-    
     static func getAll()->Results<Player>{
         let realm = try! Realm()
         return realm.objects(Player.self)
+    }
+    
+    override static func primaryKey() -> String? {
+        return "id"
     }
 }
